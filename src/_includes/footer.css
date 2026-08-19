@@ -1,0 +1,39 @@
+.footer {
+	background: #fff;
+	.divider {
+		margin: unset;
+	}
+}
+
+.footer-layout {
+	display: flex;
+	flex-wrap: wrap;
+	font-size: 0.8rem;
+	margin-inline: var(--layout-margin);
+	margin-block: 4rem;
+	align-items: center;
+	gap: 1rem;
+	.contact {
+		.logo {
+			width: 6rem;
+			margin-bottom: 1rem;
+		}
+		a {
+			display: block;
+			width: fit-content;
+		}
+	}
+	a[title='NIRA'] {
+		margin-left: auto;
+	}
+
+	img {
+		mix-blend-mode: multiply;
+	}
+	.nira {
+		width: 6rem;
+	}
+	.cpc {
+		width: 4rem;
+	}
+}

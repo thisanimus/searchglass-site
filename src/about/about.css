@@ -13,3 +13,33 @@
 		flex-direction: row;
 	}
 }
+
+.grapevine {
+	position: relative;
+	margin-block-end: unset;
+	text-align: center;
+
+	.copy {
+		position: absolute;
+		width: var(--container);
+		top: 20%;
+		left: 0;
+	}
+	p {
+		max-width: unset;
+	}
+}
+.fadeout {
+	grid-column: 1/-1;
+	img {
+		min-height: 30rem;
+		object-fit: cover;
+		opacity: 0.8;
+		mix-blend-mode: multiply;
+		/* Required for WebKit browsers like Chrome, Safari, and Edge */
+		-webkit-mask-image: linear-gradient(to top, black 20%, transparent 100%);
+
+		/* Standard property */
+		mask-image: linear-gradient(to top, black 20%, transparent 100%);
+	}
+}

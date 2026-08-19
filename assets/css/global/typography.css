@@ -120,8 +120,16 @@ hr {
 	--height: 1rem;
 	height: 0;
 	translate: 0 calc(var(--height) / -2);
+	display: grid;
+	grid-template-columns: var(--layout-margin) 1fr var(--layout-margin);
 	grid-template-rows: repeat(2, calc(var(--height) / 2));
+	margin: 4rem 0;
+	> * {
+		grid-column: 2;
+	}
+
 	> hr {
+		width: 100%;
 		grid-column: 1/-1;
 		grid-row: 2;
 	}
