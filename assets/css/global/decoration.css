@@ -1,0 +1,16 @@
+.stripes {
+	pointer-events: none;
+	background-image: repeating-linear-gradient(
+		45deg,
+		currentColor 10px,
+		currentColor 11px,
+		transparent 11px,
+		transparent 20px
+	);
+}
+.dots {
+	pointer-events: none;
+	--size: 1rem;
+	background-image: radial-gradient(currentColor 1px, transparent 1px);
+	background-size: var(--size) var(--size);
+}

@@ -1,0 +1,54 @@
+.home-hero {
+	margin-block-start: unset !important;
+	position: relative;
+	background-image: url(assets/img/black-orchid.png);
+	margin-bottom: unset;
+	padding-bottom: max(4vw, 3rem);
+	h2 {
+		text-wrap: pretty;
+	}
+	.dots {
+		opacity: 0.1;
+		position: absolute;
+		grid-column: 1/-1;
+		top: 0;
+		right: 0;
+		width: 100%;
+		height: 100%;
+		z-index: 2;
+	}
+}
+
+.home-hero .home-hero-content {
+	padding: 1rem;
+	grid-column: 1 / -1;
+}
+
+.home-hero + .divider {
+	margin-top: unset;
+}
+
+.home-panel {
+	margin-block: 8em;
+	h2 {
+		text-transform: uppercase;
+		letter-spacing: 0.2em;
+		font-size: clamp(1.75rem, 4vw, 2.5rem);
+		font-weight: 300;
+		display: flex;
+		align-items: center;
+		&:after {
+			opacity: 0.2;
+			content: '';
+			flex-grow: 1;
+			height: 70%;
+			background-image: repeating-linear-gradient(
+				45deg,
+				currentColor 10px,
+				currentColor 11px,
+				transparent 11px,
+				transparent 20px
+			);
+		}
+	}
+}

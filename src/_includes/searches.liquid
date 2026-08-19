@@ -1,0 +1,14 @@
+<table class="searches">
+  {% for search in searches %}
+    <tr>
+      <td>
+        <a href="/searches/{{ search.search_number }}">Search {{ search.search_number }} - {{ search.web_title }}</a>
+      </td>
+      <td class="apply">
+        <a href="mailto:keith@insearchgroup.com?subject=Search%20{{ search.search_number }}%20-%20{{ search.web_title }}"
+          >Apply →</a
+        >
+      </td>
+    </tr>
+  {% endfor %}
+</table>

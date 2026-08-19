@@ -1,0 +1,15 @@
+.about-bio {
+	display: flex;
+	flex-direction: column;
+	gap: 2rem;
+	img {
+		max-width: 12rem;
+		object-fit: contain;
+		object-position: top center;
+	}
+}
+@media (min-width: 36rem) {
+	.about-bio {
+		flex-direction: row;
+	}
+}

@@ -1,0 +1,61 @@
+@layer reset {
+	*,
+	*::before,
+	*::after {
+		box-sizing: border-box;
+	}
+	* {
+		margin: 0;
+	}
+}
+:root {
+	--color-dark: #2e3942;
+	--color-dark: #212a31;
+	--color-dark-intense: #1a2025;
+
+	--color-ui-muted: #c3c9d2;
+	--color-ui: #9ca5b1;
+	--color-ui-intense: #6f7781;
+
+	--color-primary-muted: #394a5f;
+	--color-primary: #25364b;
+	--color-primary-intense: #15202d;
+
+	--color-accent: #b43e3e;
+	--color-accent: #8e2424;
+	--color-accent-intense: #681515;
+
+	--color-link-default: #1362a3;
+	--color-link-hover: #004985;
+	--color-link-visited: #654aab;
+}
+
+html {
+	scroll-behavior: smooth;
+	font-size: clamp(1.125rem, 1rem + 0.5vw, 1.5rem);
+	background: #fffbf6;
+	color: var(--color-dark);
+}
+
+body {
+	font-family: 'Source Serif 4';
+	height: 100%;
+	min-height: 100dvh;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	display: flex;
+	flex-direction: column;
+}
+body > main {
+	flex-grow: 1;
+}
+[data-color-mode='dark'] {
+	background-color: var(--color-primary);
+	:where(h1, h2, h3, h4, h5, h6) {
+		color: white;
+	}
+
+	--color-link-default: #69bde4;
+	--color-link-hover: #91d5f5;
+	--color-link-visited: #b99dff;
+}

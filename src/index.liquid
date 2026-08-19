@@ -1,0 +1,80 @@
+---
+layout: base.liquid
+title: Home
+description: Thisanimus
+date: 2024-09-16
+styles: 
+- home.css
+---
+<header class="hero home-hero" data-color-mode="dark">
+  <div class="home-hero-content">
+    <h2 class="shout">Unparalleled recruiting for the Property and Casualty Insurance industry.</h2>
+    <p>
+      We find qualified professionals for every role: from claims adjusters to executive leadership. We bring more than
+      30 years of industry experience to bear, carefully evaluating each candidate before they're introduced, saving you
+      time and helping you hire with confidence.
+    </p>
+    <p>Need to find a match? We'd love to hear from you</p>
+    <a href="mailto:keith@insearchgroup.com">keith@insearchgroup.com</a>
+  </div>
+  <div class="dots"></div>
+</header>
+<div class="divider">
+  <hr />
+</div>
+<section id="clients" class="home-panel">
+  <h2>Clients</h2>
+  <p>
+    Finding experienced insurance professionals can be difficult. Sorting through unqualified applicants is even harder.
+    We take care of the search, screening, and initial vetting so you spend your time talking with candidates who are
+    ready for the role.
+  </p>
+  <h3>We recruit for positions including:</h3>
+  <ul class="feature-list">
+    <li>Claims</li>
+    <li>Personal Lines</li>
+    <li>Commercial Lines</li>
+    <li>Account Management</li>
+    <li>Customer Service</li>
+    <li>Underwriting</li>
+    <li>Sales and Production</li>
+    <li>Operations</li>
+    <li>Management</li>
+    <li>Executive Leadership</li>
+  </ul>
+  <div class="eyebrow">Our goal</div>
+  <h3>We help you make better hires, faster.</h3>
+
+  <ul class="feature-list">
+    <li>Excellent judgement based on 40 years of industry experience</li>
+    <li>Thorough candidate screening and pre-vetting</li>
+    <li>Honest communication throughout the hiring process</li>
+    <li>Candidates matched to your agency's needs and culture</li>
+    <li>Support from search through offer</li>
+  </ul>
+</section>
+<div class="divider">
+  <hr />
+</div>
+<section id="candidates" class="home-panel">
+  <h2>Candidates</h2>
+  <p>Looking for your next opportunity?</p>
+  <p>
+    We work with agencies that are actively hiring talented property and casualty professionals. Instead of applying to
+    dozens of openings, you'll work with someone who understands the industry and helps connect you with positions that
+    fit your experience, goals, and strengths.
+  </p>
+  <p>We'll also help you prepare for interviews so you can present yourself with confidence.</p>
+
+  <h4>Candidate services include:</h4>
+  <ul class="feature-list">
+    <li>Confidential career conversations</li>
+    <li>Personalized job matching</li>
+    <li>Resume and interview guidance</li>
+    <li>Access to opportunities that may not be publicly advertised</li>
+    <li>Support throughout the hiring process</li>
+  </ul>
+  <div class="eyebrow">On the Lookout</div>
+  <h3>Active Searches</h3>
+  {% render 'searches' with searches %}
+</section>

@@ -1,0 +1,25 @@
+---
+layout: base.liquid
+pagination:
+  data: searches
+  size: 1
+  alias: search
+permalink: "searches/{{ search.search_number | slugify }}/"
+---
+<header class="hero page-hero">
+  <div class="subheading">Search {{ search.search_number }}</div>
+  <h1>{{ search.web_title }}</h1>
+</header>
+<div class="divider">
+  <hr />
+</div>
+<section>
+  {{ search.web_description }}
+  <p>
+    <a
+      class="button"
+      href="mailto:keith@insearchgroup.com?subject=Search%20{{ search.search_number }}%20-%20{{ search.web_title }}"
+      >Apply →</a
+    >
+  </p>
+</section>

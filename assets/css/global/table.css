@@ -1,0 +1,42 @@
+table {
+	border-collapse: collapse;
+	width: 100%;
+	font-size: 0.8rem;
+}
+
+table caption {
+	text-align: left;
+	font-size: 1rem;
+	font-weight: 600;
+}
+
+td,
+th {
+	text-align: left;
+	padding: 0.25rem 0.5rem;
+	vertical-align: top;
+	word-wrap: break-word;
+}
+td:first-child {
+	padding-inline-start: unset;
+}
+td:last-child {
+	padding-inline-end: unset;
+}
+thead {
+	border-bottom: 1px solid var(--color-ui-muted);
+}
+thead th {
+	vertical-align: bottom;
+}
+
+tfoot {
+	border-top: 1px solid var(--color-ui-muted);
+}
+tr:first-child {
+	border-top: 1px dashed var(--color-ui-muted);
+}
+
+tr {
+	border-bottom: 1px dashed var(--color-ui-muted);
+}

@@ -1,0 +1,39 @@
+:root {
+	--cols: 1;
+	--container-width: 54rem;
+
+	/* --gap
+   defualt col spacing
+  important for lining things up
+  */
+	--gap: 1rem;
+
+	/* --layout-margin: the outside part of our max-width container */
+	--layout-margin: max(((100vw - var(--container-width))/2), 1rem);
+
+	/* --container: the width of our max-width container */
+	--container: calc(100vw - (2 * var(--layout-margin)));
+}
+@layer layout {
+	.global-layout {
+		> * {
+			display: grid;
+			grid-template-columns: var(--layout-margin) 1fr var(--layout-margin);
+			margin: 4rem 0;
+			> * {
+				grid-column: 2;
+			}
+		}
+	}
+}
+
+[data-color-mode='dark'] {
+	background-color: var(--color-primary);
+	color: white;
+	:where(h1, h2, h3, h4, h5, h6) {
+		color: white;
+	}
+	--color-link-default: #69bde4;
+	--color-link-hover: #91d5f5;
+	--color-link-visited: #b99dff;
+}
